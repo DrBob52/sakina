@@ -32,7 +32,7 @@
 
   <h2>What stays on your device</h2>
   <ul>
-    <li><strong>Your location.</strong> Sakina uses your location, or a city you choose, to calculate prayer times and the Qibla direction on your device. The location is saved on your iPhone so the app, its widgets and your Apple Watch can use it. Sakina never sends it to the developer. The only service that receives it is Apple Maps, to name the place (see below).</li>
+    <li><strong>Your location.</strong> Sakina uses your location, or a city you choose, to calculate prayer times and the Qibla direction on your device. The location is saved on your iPhone so the app, its widgets and your Apple Watch can use it. Sakina never sends it to the developer. The only service that receives it is Apple Maps, to name the place (see below). If you turn on Update when I travel, Sakina also checks your location in the background when you have moved a long way, so prayer times and alerts follow you on a trip; this stays on your iPhone too, and you can turn it off at any time in Settings.</li>
     <li><strong>Your settings.</strong> Calculation method, notification choices, theme and other preferences are saved on your device.</li>
     <li><strong>Notifications.</strong> Prayer reminders are scheduled by your iPhone itself. Nothing is sent from a server.</li>
     <li><strong>Apple Watch.</strong> Your location, settings and today's tracker marks pass directly between your iPhone and your paired Apple Watch.</li>
@@ -44,7 +44,7 @@
 
   <h2>Services Sakina connects to</h2>
   <ul>
-    <li><strong>Apple Maps.</strong> When you search for a city or use your current location, the search text or your coordinates are sent to Apple to find the place name and time zone. <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a> applies.</li>
+    <li><strong>Apple Maps.</strong> When you search for a city or use your current location (also in the background, with Update when I travel on), the search text or your coordinates are sent to Apple to find the place name and time zone. <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a> applies.</li>
     <li><strong>Sakina's relay, and Quran Foundation.</strong> Only if you choose the translation by M.A.S. Abdel Haleem in Settings, which is provided by <a href="https://quran.foundation">Quran Foundation</a> and is not included in the app. Sakina then downloads the translation, and checks for corrections to it every few days, through a small relay run by the developer on <a href="https://www.cloudflare.com">Cloudflare</a> Workers. The relay is used for nothing else. It receives no location. It passes the request on to Quran Foundation and the translation back, and keeps no logs and no information about you. Quran Foundation sees only the relay, not you or your device. Cloudflare, which hosts the relay, handles the connection the way any web host does (<a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's Privacy Policy</a>). Nothing is requested unless you choose that translation. The downloaded translation is kept on your device, outside your backups, and deleted when you choose another translation.</li>
     <li><strong>EveryAyah.com.</strong> When you play a recitation, the audio for that verse is downloaded from <a href="https://everyayah.com">everyayah.com</a>. Like any website, that server sees your IP address and which verse is requested. No other information is sent. Downloaded audio is cached on your device.</li>
   </ul>
@@ -52,7 +52,7 @@
 
   <h2>Permissions</h2>
   <ul>
-    <li><strong>Location</strong>, for prayer times and a true-north Qibla compass. You can choose a city instead.</li>
+    <li><strong>Location</strong>, for prayer times and a true-north Qibla compass. You can choose a city instead. Access set to Always is needed only for Update when I travel, which is off unless you turn it on.</li>
     <li><strong>Notifications</strong>, for prayer reminders.</li>
     <li><strong>Add to Photos</strong>, only to save an ayah image or video you create. Sakina cannot see your photo library.</li>
   </ul>
